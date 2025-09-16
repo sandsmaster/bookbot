@@ -9,5 +9,6 @@ def main():
     book_content = get_book_text("books/frankenstein.txt")
     num_words = wc(book_content)
     print(f"{num_words} words found in the document")
+    print(char_stats(book_content))
 
 main()
