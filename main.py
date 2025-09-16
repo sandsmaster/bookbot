@@ -1,5 +1,5 @@
 import re
-from stats import wc
+from stats import wc, char_stats
 
 def get_book_text (url):
     with open(url, "rt") as f:
