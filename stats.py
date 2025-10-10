@@ -21,10 +21,10 @@ def sort_char(char_stats):
     char_dicts.sort(key=lambda x: x["num"], reverse=True)
     return char_dicts
 
-def report_stats(wc_num, char_stats):
+def report_stats(book_path,wc_num, char_stats):
     print(f'''
 ============ BOOKBOT ============
-Analyzing book found at books/frankenstein.txt...
+Analyzing book found at {book_path}...
 ----------- Word Count ----------
 Found {wc_num} total words''')
     print("--------- Character Count -------")
